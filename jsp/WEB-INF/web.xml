@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+  <display-name>Mi Portafolio - Fernando Quiroz</display-name>
+
+  <welcome-file-list>
+    <welcome-file>proyectos.jsp</welcome-file>
+  </welcome-file-list>
+
+  <!-- Referencia al DataSource declarado en META-INF/context.xml -->
+  <resource-ref>
+    <description>Conexión a la base de datos del portafolio</description>
+    <res-ref-name>jdbc/PortafolioDB</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+
+</web-app>

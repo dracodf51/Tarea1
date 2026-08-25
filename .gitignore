@@ -1,0 +1,17 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Java build output
+*.class
+target/
+build/
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
+
+# Editores
+.idea/
+*.swp

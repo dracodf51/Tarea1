@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Declaración del DataSource JNDI usado por las páginas JSP.
+  Alternativa recomendada frente a abrir conexiones "a mano" con
+  DriverManager (ver db/DBUtil.java) en un entorno de producción real.
+  Requiere el conector MySQL/Connector-J en $CATALINA_HOME/lib.
+-->
+<Context>
+  <Resource
+    name="jdbc/PortafolioDB"
+    auth="Container"
+    type="javax.sql.DataSource"
+    maxTotal="20"
+    maxIdle="10"
+    maxWaitMillis="10000"
+    username="root"
+    password="cambia_esta_clave"
+    driverClassName="com.mysql.cj.jdbc.Driver"
+    url="jdbc:mysql://localhost:3306/portafolio_fernando?useSSL=false&amp;serverTimezone=UTC"
+  />
+</Context>

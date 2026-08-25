@@ -1,0 +1,47 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{239AC615-8016-4D29-805D-2CDBEFAA6949}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sitio Web (HTML-CSS-JS)", "Sitio Web (HTML-CSS-JS)", "{53147CFC-95DE-4B0A-90B0-DC66ACBD51D7}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		habilidades.html = habilidades.html
+		proyectos.html = proyectos.html
+		experiencia.html = experiencia.html
+		contacto.html = contacto.html
+		css\reset.css = css\reset.css
+		css\styles.css = css\styles.css
+		js\data.js = js\data.js
+		js\main.js = js\main.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JSP (Backend)", "JSP (Backend)", "{1704FF34-6401-46B2-99B0-9F0025A95F85}"
+	ProjectSection(SolutionItems) = preProject
+		jsp\README.md = jsp\README.md
+		jsp\proyectos.jsp = jsp\proyectos.jsp
+		jsp\habilidades.jsp = jsp\habilidades.jsp
+		jsp\contacto.jsp = jsp\contacto.jsp
+		jsp\db\schema.sql = jsp\db\schema.sql
+		jsp\WEB-INF\web.xml = jsp\WEB-INF\web.xml
+		jsp\WEB-INF\classes\db\DBUtil.java = jsp\WEB-INF\classes\db\DBUtil.java
+		jsp\META-INF\context.xml = jsp\META-INF\context.xml
+		jsp\css\reset.css = jsp\css\reset.css
+		jsp\css\styles.css = jsp\css\styles.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

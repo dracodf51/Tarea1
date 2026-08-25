@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto · Fernando Quiroz</title>
+  <meta
+    name="description"
+    content="Formulario de contacto de Fernando Quiroz para propuestas, consultas académicas y colaboraciones."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-portfolio sticky-top py-3">
+      <div class="container container-narrow">
+        <a class="navbar-brand" href="index.html">Fernando <span>Quiroz</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navPrincipal"
+          aria-controls="navPrincipal"
+          aria-expanded="false"
+          aria-label="Abrir menú de navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="habilidades.html">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn-nav-cta d-inline-block" href="contacto.html">Hablemos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container container-narrow">
+        <p class="kicker">Hablemos</p>
+        <h1 class="section-title">Conversemos</h1>
+        <p class="section-lead">
+          Cuéntame sobre tu proyecto, una consulta académica o una colaboración. Los campos
+          marcados con <strong>*</strong> son obligatorios; este formulario valida en el
+          navegador con HTML5 y, en la versión con backend, también en el servidor antes de
+          guardar en la base de datos (ver <code>/jsp/contacto.jsp</code>).
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt pt-0">
+      <div class="container container-narrow">
+        <div class="row g-4">
+          <!-- ===== Formulario principal de contacto ===== -->
+          <div class="col-lg-7">
+            <div class="form-card">
+              <form
+                class="necesita-validacion"
+                data-envio-simulado
+                data-mensaje-exito="¡Gracias por escribirme! Te responderé a la brevedad."
+                action="jsp/contacto.jsp"
+                method="post"
+                novalidate
+              >
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre completo *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      name="nombre"
+                      placeholder="Ej: María Pérez"
+                      minlength="3"
+                      required
+                    />
+                    <div class="invalid-feedback">Ingresa tu nombre (mínimo 3 caracteres).</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="correo" class="form-label">Correo electrónico *</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="correo"
+                      name="correo"
+                      placeholder="tu@correo.com"
+                      required
+                    />
+                    <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="telefono"
+                      name="telefono"
+                      placeholder="+56 9 1234 5678"
+                      pattern="^\+?[0-9\s]{8,15}$"
+                    />
+                    <div class="invalid-feedback">Usa solo números, espacios y el símbolo +.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="motivo" class="form-label">Motivo *</label>
+                    <select class="form-select" id="motivo" name="motivo" required>
+                      <option value="" selected disabled>Selecciona una opción</option>
+                      <option value="proyecto">Propuesta de proyecto</option>
+                      <option value="academico">Consulta académica</option>
+                      <option value="colaboracion">Colaboración técnica</option>
+                      <option value="otro">Otro</option>
+                    </select>
+                    <div class="invalid-feedback">Selecciona un motivo de contacto.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje *</label>
+                    <textarea
+                      class="form-control"
+                      id="mensaje"
+                      name="mensaje"
+                      rows="4"
+                      minlength="10"
+                      placeholder="Escribe tu mensaje..."
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">Cuéntame un poco más (mínimo 10 caracteres).</div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="consentimiento"
+                        name="consentimiento"
+                        required
+                      />
+                      <label class="form-check-label" for="consentimiento">
+                        Acepto que mis datos sean usados solo para responder este mensaje *
+                      </label>
+                      <div class="invalid-feedback">Debes aceptar el uso de tus datos para continuar.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-brand">Enviar mensaje</button>
+                    <p class="alerta-envio d-none small mt-3 mb-0" style="color: var(--color-primary);" role="status"></p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- ===== Comentarios + Newsletter ===== -->
+          <div class="col-lg-5 d-flex flex-column gap-4">
+            <div class="form-card">
+              <h2 class="h4 mb-1" style="color: var(--color-primary-dark);">Deja un comentario</h2>
+              <p class="section-lead mb-3">Comparte tu impresión sobre el portafolio.</p>
+              <form
+                class="necesita-validacion"
+                data-envio-simulado
+                data-mensaje-exito="¡Gracias por tu comentario!"
+                novalidate
+              >
+                <div class="mb-3">
+                  <label for="nombreComentario" class="form-label">Tu nombre *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombreComentario"
+                    name="nombreComentario"
+                    placeholder="Nombre"
+                    required
+                  />
+                  <div class="invalid-feedback">Ingresa tu nombre.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="textoComentario" class="form-label">Comentario *</label>
+                  <textarea
+                    class="form-control"
+                    id="textoComentario"
+                    name="textoComentario"
+                    rows="3"
+                    minlength="5"
+                    placeholder="Escribe tu comentario..."
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">El comentario debe tener al menos 5 caracteres.</div>
+                </div>
+                <button type="submit" class="btn btn-outline-brand w-100">Publicar comentario</button>
+                <p class="alerta-envio d-none small mt-3 mb-0" style="color: var(--color-primary);" role="status"></p>
+              </form>
+            </div>
+
+            <div class="form-card" style="background: var(--color-primary-dark); border: none;">
+              <h2 class="h4 mb-1 text-white">Boletín</h2>
+              <p class="mb-3" style="color: rgba(255,255,255,0.75);">
+                Notas sobre lo que voy aprendiendo, una vez al mes.
+              </p>
+              <form
+                class="necesita-validacion"
+                data-envio-simulado
+                data-mensaje-exito="¡Suscripción realizada con éxito!"
+                novalidate
+              >
+                <label for="correoNewsletter" class="visually-hidden">Correo electrónico</label>
+                <div class="d-flex flex-column flex-sm-row gap-2">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="correoNewsletter"
+                    name="correoNewsletter"
+                    placeholder="tu@correo.com"
+                    required
+                  />
+                  <button type="submit" class="btn btn-brand text-nowrap">Suscribirme</button>
+                </div>
+                <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+                <p class="alerta-envio d-none small mt-2 mb-0" style="color: var(--color-accent-light);" role="status"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container container-narrow">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <p class="fw-semibold text-white mb-1">Fernando Quiroz</p>
+          <p class="small mb-0">Estudiante de Desarrollo Web II · Portafolio académico</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="small mb-1">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            ·
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            ·
+            <a href="mailto:fernando.quiroz@erex.cl">fernando.quiroz@erex.cl</a>
+          </p>
+          <p class="small mb-0">&copy; 2026 Fernando Quiroz. Proyecto académico.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
