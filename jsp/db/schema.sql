@@ -72,11 +72,7 @@ INSERT INTO proyectos (nombre, ruta, descripcion, categoria, tags, repo_url) VAL
  'soporte', 'Soporte TI,Redes,Sector público', '');
 
 INSERT INTO habilidades (nombre, nivel, orden) VALUES
-('HTML5 semántico', 90, 1),
-('CSS3 / Diseño responsivo', 85, 2),
-('Bootstrap 5', 88, 3),
-('JavaScript', 75, 4),
-('Java / JSP', 70, 5),
-('SQL (MySQL / SQL Server)', 72, 6),
-('Git / GitHub', 80, 7),
-('Accesibilidad web', 68, 8);
+('Soporte computacional', 85, 1),
+('Armado y configuración', 74, 2),
+('Electrónica computacional', 75, 3),
+('Cambio de componentes (pantallas, memorias)', 63, 4);

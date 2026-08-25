@@ -41,12 +41,8 @@ const PROYECTOS = [
 ];
 
 const HABILIDADES = [
-  { nombre: "HTML5 semántico", nivel: 90 },
-  { nombre: "CSS3 / Diseño responsivo", nivel: 85 },
-  { nombre: "Bootstrap 5", nivel: 88 },
-  { nombre: "JavaScript", nivel: 75 },
-  { nombre: "Java / JSP", nivel: 70 },
-  { nombre: "SQL (MySQL / SQL Server)", nivel: 72 },
-  { nombre: "Git / GitHub", nivel: 80 },
-  { nombre: "Accesibilidad web", nivel: 68 },
+  { nombre: "Soporte computacional", nivel: 85 },
+  { nombre: "Armado y configuración", nivel: 74 },
+  { nombre: "Electrónica computacional", nivel: 75 },
+  { nombre: "Cambio de componentes (pantallas, memorias)", nivel: 63 },
 ];
