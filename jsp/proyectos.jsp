@@ -52,9 +52,11 @@
                 <span class="project-tag"><%= tag.trim() %></span>
               <% } %>
             </div>
-            <a href="<%= repoUrl %>" class="fw-semibold text-decoration-none" style="color: var(--color-primary);">
-              Ver repositorio →
-            </a>
+            <% if (repoUrl != null && !repoUrl.isBlank()) { %>
+              <a href="<%= repoUrl %>" target="_blank" rel="noopener noreferrer" class="fw-semibold text-decoration-none" style="color: var(--color-primary);">
+                Visitar sitio →
+              </a>
+            <% } %>
           </article>
         </div>
         <%

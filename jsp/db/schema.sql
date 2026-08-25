@@ -61,18 +61,15 @@ CREATE TABLE IF NOT EXISTS suscriptores (
 -- Datos de ejemplo
 -- =========================================================
 INSERT INTO proyectos (nombre, ruta, descripcion, categoria, tags, repo_url) VALUES
-('VitrinaUI — Landing de E-commerce', '~/proyectos/vitrina-ui',
- 'Landing responsiva para una tienda ficticia, con catálogo filtrable y checkout maquetado con Bootstrap.',
- 'frontend', 'HTML5,CSS3,Bootstrap', '#'),
-('TaskFlow — Gestor de Tareas', '~/proyectos/taskflow-jsp',
- 'Aplicación CRUD para administrar tareas de curso, construida con JSP, Servlets y JDBC sobre MySQL.',
- 'jsp', 'JSP,Java,MySQL', '#'),
-('ClimaYa — Panel del Clima', '~/proyectos/climaya',
- 'Consumo de una API pública para mostrar el pronóstico por ciudad, con diseño adaptativo.',
- 'frontend', 'JavaScript,API,Bootstrap', '#'),
-('SalaLibre — Reservas de Salas', '~/proyectos/salalibre',
- 'Sistema para reservar salas de estudio con validación de horarios y persistencia vía JSP.',
- 'jsp', 'JSP,SQL Server,Java', '#');
+('Mantención página web — Narbona Consultores', '~/proyectos/narbona-consultores',
+ 'Mantención periódica del sitio web corporativo de Narbona Consultores (narbonaconsultores.cl): actualización de contenidos e imágenes, revisión de enlaces rotos, ajustes de estilo y verificación de que el sitio cargue rápido y se vea bien en celular.',
+ 'web', 'HTML/CSS,WordPress,Mantenimiento web', 'https://narbonaconsultores.cl'),
+('Servicio técnico computacional', '~/servicios/soporte-tecnico',
+ 'Atención de soporte técnico a equipos computacionales para clientes particulares y pequeñas empresas: diagnóstico de fallas de hardware y software, formateo e instalación de sistemas operativos, mantenimiento preventivo y limpieza física de equipos.',
+ 'soporte', 'Hardware,Software,Soporte técnico', ''),
+('Mantención de servicios en la DGAC', '~/servicios/dgac',
+ 'Soporte y mantención de equipos y servicios informáticos para la Dirección General de Aeronáutica Civil (DGAC): revisión periódica de estaciones de trabajo, atención de incidencias y coordinación con el equipo de TI institucional.',
+ 'soporte', 'Soporte TI,Redes,Sector público', '');
 
 INSERT INTO habilidades (nombre, nivel, orden) VALUES
 ('HTML5 semántico', 90, 1),

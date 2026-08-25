@@ -8,44 +8,35 @@
 
 const PROYECTOS = [
   {
-    id: "tienda-ui",
-    nombre: "VitrinaUI — Landing de E-commerce",
-    ruta: "~/proyectos/vitrina-ui",
+    id: "narbona-consultores",
+    nombre: "Mantención página web — Narbona Consultores",
+    ruta: "~/proyectos/narbona-consultores",
     descripcion:
-      "Landing responsiva para una tienda ficticia, con catálogo filtrable, carrito visual y checkout maquetado con Bootstrap.",
-    categoria: "frontend",
-    tags: ["HTML5", "CSS3", "Bootstrap"],
-    repo: "#",
+      "Mantención periódica del sitio web corporativo de Narbona Consultores (narbonaconsultores.cl): actualización de contenidos e imágenes, revisión de enlaces rotos, ajustes de estilo y verificación de que el sitio cargue rápido y se vea bien en celular.",
+    categoria: "web",
+    tags: ["HTML/CSS", "WordPress", "Mantenimiento web"],
+    repo: "https://narbonaconsultores.cl",
+    enlaceTexto: "Visitar sitio →",
   },
   {
-    id: "gestor-tareas-jsp",
-    nombre: "TaskFlow — Gestor de Tareas",
-    ruta: "~/proyectos/taskflow-jsp",
+    id: "servicio-tecnico",
+    nombre: "Servicio técnico computacional",
+    ruta: "~/servicios/soporte-tecnico",
     descripcion:
-      "Aplicación CRUD para administrar tareas de curso, construida con JSP, Servlets y JDBC sobre una base de datos MySQL.",
-    categoria: "jsp",
-    tags: ["JSP", "Java", "MySQL"],
-    repo: "#",
+      "Atención de soporte técnico a equipos computacionales para clientes particulares y pequeñas empresas: diagnóstico de fallas de hardware y software, formateo e instalación de sistemas operativos, mantenimiento preventivo y limpieza física de equipos.",
+    categoria: "soporte",
+    tags: ["Hardware", "Software", "Soporte técnico"],
+    repo: "",
   },
   {
-    id: "dashboard-clima",
-    nombre: "ClimaYa — Panel del Clima",
-    ruta: "~/proyectos/climaya",
+    id: "dgac",
+    nombre: "Mantención de servicios en la DGAC",
+    ruta: "~/servicios/dgac",
     descripcion:
-      "Consumo de una API pública para mostrar el pronóstico por ciudad, con gráficos simples y diseño adaptativo.",
-    categoria: "frontend",
-    tags: ["JavaScript", "API", "Bootstrap"],
-    repo: "#",
-  },
-  {
-    id: "reservas-salas",
-    nombre: "SalaLibre — Reservas de Salas",
-    ruta: "~/proyectos/salalibre",
-    descripcion:
-      "Sistema para reservar salas de estudio con validación de horarios y persistencia en base de datos vía JSP.",
-    categoria: "jsp",
-    tags: ["JSP", "SQL Server", "Java"],
-    repo: "#",
+      "Soporte y mantención de equipos y servicios informáticos para la Dirección General de Aeronáutica Civil (DGAC): revisión periódica de estaciones de trabajo, atención de incidencias y coordinación con el equipo de TI institucional.",
+    categoria: "soporte",
+    tags: ["Soporte TI", "Redes", "Sector público"],
+    repo: "",
   },
 ];
 

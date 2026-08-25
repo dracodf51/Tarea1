@@ -43,9 +43,13 @@ function renderizarProyectos(filtro = "todos") {
           <div class="mb-3">
             ${p.tags.map((t) => `<span class="project-tag">${t}</span>`).join("")}
           </div>
-          <a href="${p.repo}" class="fw-semibold text-decoration-none" style="color: var(--color-primary);">
-            Ver repositorio →
-          </a>
+          ${
+            p.repo
+              ? `<a href="${p.repo}" target="_blank" rel="noopener noreferrer" class="fw-semibold text-decoration-none" style="color: var(--color-primary);">
+                  ${p.enlaceTexto || "Ver más →"}
+                </a>`
+              : ""
+          }
         </article>
       </div>`
     )
