@@ -1,12 +1,11 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MiPortafolio", ".\", "{09C720E9-B9E7-4386-8B06-9EF6D76CF31E}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Tarea1", ".", "{09C720E9-B9E7-4386-8B06-9EF6D76CF31E}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
-		TargetFrameworkMoniker = "System.WebServer,Version%3Av4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8.1"
 		Debug.AspNetCompiler.VirtualPath = "/MiPortafolio"
 		Debug.AspNetCompiler.PhysicalPath = ".\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MiPortafolio\"
